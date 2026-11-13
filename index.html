@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Media Library is a private, self-hosted browser for files and media in the owner's Google Drive and MEGA accounts.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <link rel="canonical" href="https://rayaana.github.io/media-library-info/">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Media Library — Private cloud media browser</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="./"><img src="icon.svg" width="32" height="32" alt="">Media Library</a>
+      <nav aria-label="Main navigation"><a href="privacy.html">Privacy policy</a><a href="https://github.com/RayaanA/media-library-info/issues">Contact</a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="title">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> PERSONAL USE · SELF HOSTED</p>
+        <h1 id="title">Your files.<br>A clearer view.</h1>
+        <p class="intro">Media Library brings the owner's Google Drive and MEGA accounts into a private file and media browser.</p>
+        <p class="hero-detail">Browse original folders, search across connected storage, preview videos, and collect download links from one interface.</p>
+        <a class="button" href="privacy.html">How your data is used <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="features" aria-labelledby="features-title">
+        <h2 id="features-title">One library, original storage.</h2>
+        <div class="feature"><span class="number" aria-hidden="true">01</span><h3>Browse and preview</h3><p>Use folder, combined storage, or media views. Search filenames and see thumbnails and muted video previews.</p></div>
+        <div class="feature"><span class="number" aria-hidden="true">02</span><h3>Manage your files</h3><p>Use supported provider actions to create folders, rename or move files, and check account storage usage. Deletion follows the provider driver's behavior and can be permanent.</p></div>
+        <div class="feature"><span class="number" aria-hidden="true">03</span><h3>Download when needed</h3><p>Collect private download links for a folder or connected storage. Optional JDownloader exports preserve the source folder structure.</p></div>
+      </section>
+      <section class="access" aria-labelledby="access-title">
+        <p class="eyebrow">GOOGLE ACCOUNT ACCESS</p>
+        <h2 id="access-title">Permission with a purpose.</h2>
+        <p>The owner connects each Google account through Google's sign-in and consent screen. Drive access lets the private library list and search existing files, display thumbnails, stream media, read storage usage, and perform file-management actions the owner requests.</p>
+        <p>The app requests full Drive file access because it browses existing files across the connected account. It stores a refresh token on the owner's host so normal access can refresh without repeated sign-in. Access can be revoked through <a href="https://myaccount.google.com/connections">Google Account connections</a>.</p>
+        <p class="notice">This website provides app information and privacy disclosures. The library itself runs on the owner's computer and is reached through the owner's private connection. There is no public account signup here.</p>
+      </section>
+    </main>
+    <footer><span>Media Library</span><a href="privacy.html">Privacy policy</a><a href="https://github.com/RayaanA/media-library-info/issues">Support &amp; privacy questions</a></footer>
+  </div>
+</body>
+</html>

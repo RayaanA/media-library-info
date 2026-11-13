@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Media Library accesses, uses, stores, and shares Google Drive and other connected account data.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <link rel="canonical" href="https://rayaana.github.io/media-library-info/privacy.html">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Privacy policy — Media Library</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="./"><img src="icon.svg" width="32" height="32" alt="">Media Library</a>
+      <nav aria-label="Main navigation"><a href="./">About the app</a><a href="https://github.com/RayaanA/media-library-info/issues">Contact</a></nav>
+    </header>
+    <main id="main" class="policy">
+      <p class="eyebrow">YOUR DATA</p>
+      <h1>Privacy policy</h1>
+      <p class="updated">Effective November 12, 2026</p>
+      <p class="intro">Media Library is a personal-use, self-hosted application maintained by <a href="https://github.com/RayaanA">RayaanA</a>. It helps its owner browse and manage files in accounts they choose to connect. This policy covers that application and this public information website.</p>
+
+      <h2>Information the app accesses</h2>
+      <p>When a Google account is connected, the app receives OAuth authorization tokens and reads the account email address and Drive permission identifier to identify the connection. Google passwords are entered on Google's own sign-in page and are not collected by the connector.</p>
+      <p>With the approved Drive permission, the app can access existing files and folders, including their names, identifiers, paths, sizes, modification dates, thumbnails, media metadata, file content requested for streaming or downloading, and account storage usage. Full Drive access also enables supported file-management actions such as creating folders, uploading, renaming, moving, or deleting files when requested through the private interface.</p>
+      <p>For a connected MEGA account, its provider credentials and any configured authentication settings are stored by the self-hosted backend. Similar file, folder, content, and capacity data are accessed to provide the library features.</p>
+
+      <h2>How information is used</h2>
+      <p>Account identifiers associate each connection with its storage location. Tokens authenticate requests and refresh access. File metadata supports listings, search, storage usage, and navigation. Requested file content supports playback, previews, downloads, and provider operations. The background preview worker reads limited portions of media to generate cached thumbnails; it can prepare MEGA root thumbnails while the library is running.</p>
+      <p>Google user data is used to provide these user-facing features. It is not sold, used for advertising, used to train generalized AI or machine-learning models, or used for an unrelated purpose.</p>
+
+      <h2>Storage and retention</h2>
+      <p>Account connection settings, refresh tokens, provider credentials, account identifiers, the search index, and generated preview data are stored on the owner's host. Backups may contain the same information. The library browser stores its login token and display preferences locally; the local account connector uses a temporary session cookie and server-side session memory.</p>
+      <p>Source files remain with the connected providers unless the owner requests a download, upload, move, copy, or deletion. Preview files and metadata can be retained locally. Removing a connection or revoking Google access does not automatically erase old backups or all cached data. The owner controls retention and must remove those copies separately when desired.</p>
+
+      <h2>Sharing and transfers</h2>
+      <p>The backend communicates with Google and MEGA to fulfill the requested features. Streams, metadata, and previews are sent to the owner's authorized browser or downloader. Private remote access can use Tailscale. Signed download links may be exported to software such as JDownloader at the owner's request; anyone given such a link and network access may be able to download its file.</p>
+      <p>Using the library does not automatically make provider files public. Explicit provider sharing or distributing a download link is a separate owner action. Account credentials and file lists are not published to this information website. The maintainer does not operate a central collection service for self-hosted library data.</p>
+      <p>Google user data is shared only as necessary to deliver the requested features, with the user's consent, or as required by applicable law. Human access is limited to what the owner authorizes or what is necessary for security, legal compliance, or operation of the owner-managed installation.</p>
+
+      <h2>Security and your controls</h2>
+      <p>The configured installation uses authenticated library access, a local account connector, private network access, and filesystem controls for runtime credentials. The owner is responsible for protecting their devices, backups, account credentials, and exported links.</p>
+      <p>You can revoke the app's Google permission at <a href="https://myaccount.google.com/connections">Google Account connections</a>, remove a storage connection through the private library's administration interface, and delete its local data and backups. Revocation stops future authorized Google access but does not undo prior file operations. Some provider deletion actions are permanent.</p>
+
+      <h2>Google API Services Limited Use</h2>
+      <p>Media Library's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+
+      <h2>This public website</h2>
+      <p>This static website has no account forms, application login, analytics scripts, or advertising trackers. It is hosted by GitHub Pages. GitHub may process connection information such as IP addresses and request logs under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. Following an external link subjects that visit to the destination's privacy practices.</p>
+
+      <h2>Contact and changes</h2>
+      <p>For support or privacy questions, contact the operator through the support email displayed on the Google consent screen, or use the <a href="https://github.com/RayaanA/media-library-info/issues">app information repository's issue tracker</a>. The tracker is public: do not post passwords, authorization tokens, private file details, or other sensitive information.</p>
+      <p>Changes to the app's data practices will be reflected on this page with an updated effective date.</p>
+    </main>
+    <footer><a href="./">Media Library</a><a href="privacy.html" aria-current="page">Privacy policy</a><a href="https://github.com/RayaanA/media-library-info/issues">Support &amp; privacy questions</a></footer>
+  </div>
+</body>
+</html>
